@@ -2,6 +2,8 @@ import { graphql, useStaticQuery, Link } from "gatsby"
 import Img from "gatsby-image"
 import * as React from "react"
 import "./ProjectCard.css"
+import { FiGithub } from "@react-icons/all-files/fi/FiGithub"
+import GithubButton from "./GithubButton"
 
 interface Props {
   projectName: string
@@ -9,7 +11,8 @@ interface Props {
   projectSkills: string[]
   hasImage: boolean
   imagePath?: string
-  portfolioPath: string
+  githubPath: string
+  demoPath?: string
 }
 
 const ProjectCard = (props: Props) => {
@@ -39,7 +42,7 @@ const ProjectCard = (props: Props) => {
   }
 
   return (
-    <div className="w-96 h-92 flex flex-col my-6 border border-black border-opacity-10 shadow-xl p-4">
+    <div className="w-96 h-92 flex flex-col my-6 border border-black border-opacity-10 shadow-xl p-4 hover:shadow-2xl">
       <Img fluid={fluid} className="my-2" />
       <div className="py-4 border-t-2 border-opacity-5">
         <h2 className="w-full text-left text-3xl font-semibold px-2">
@@ -51,8 +54,8 @@ const ProjectCard = (props: Props) => {
           ))}
         </div>
         <div className="text-left px-2">{props.projectDescription}</div>
-        <div className="text-sm text-right mt-4 opacity-50">
-          <Link to={props.portfolioPath}>Read more about this project</Link>
+        <div className="text-right flex flex-row md:w-auto md:justify-end justify-center w-full">
+          <GithubButton githubLink={props.githubPath} />
         </div>
       </div>
     </div>
