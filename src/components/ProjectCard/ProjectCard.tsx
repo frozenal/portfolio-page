@@ -2,8 +2,7 @@ import { graphql, useStaticQuery, Link } from "gatsby"
 import Img from "gatsby-image"
 import * as React from "react"
 import "./ProjectCard.css"
-import { FiGithub } from "@react-icons/all-files/fi/FiGithub"
-import GithubButton from "./GithubButton"
+import GithubButton from "../GithubButton/GithubButton"
 
 interface Props {
   projectName: string

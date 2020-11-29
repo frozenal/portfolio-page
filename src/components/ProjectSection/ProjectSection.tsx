@@ -1,5 +1,5 @@
 import * as React from "react"
-import ProjectCard from "./ProjectCard"
+import ProjectCard from "../ProjectCard/ProjectCard"
 
 interface Props {}
 
