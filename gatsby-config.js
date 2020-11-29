@@ -10,11 +10,21 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`Roboto`, `Poppins`],
+        fonts: [`Roboto`, `Poppins`, `Epilogue`],
         display: "swap",
       },
     },
     "gatsby-plugin-sass",
     "gatsby-plugin-postcss",
+    "gatsby-transformer-sharp",
+    "gatsby-plugin-sharp",
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `assets`,
+        path: `${__dirname}/src/assets/`,
+      },
+    },
+    "gatsby-plugin-mdx",
   ],
 }
