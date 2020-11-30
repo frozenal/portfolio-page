@@ -31,7 +31,7 @@ const AboutSection = (props: Props) => {
         </div>
         <ul className="grid grid-cols-2 list-disc text-left w-7/12 mx-auto my-1">
           <li>React</li>
-          <li>Javascript/HTML/CSS</li>
+          <li>Javascript/Typescript/HTML/CSS</li>
           <li>Next.js</li>
           <li>Node.js</li>
           <li>PostgreSQL</li>

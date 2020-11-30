@@ -37,7 +37,6 @@ const ProjectCard = (props: Props) => {
         fluid = imageNode.node.fluid
       }
     }
-    console.log(fluid)
   }
 
   return (
