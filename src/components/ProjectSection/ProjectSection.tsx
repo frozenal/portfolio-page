@@ -5,8 +5,12 @@ interface Props {}
 
 const ProjectSection = (props: Props) => {
   return (
-    <div id="projects" className="w-full text-center mt-8">
-      <h2 className="text-3xl font-bold" style={{ fontFamily: "Epilogue" }}>
+    <div className="w-full text-center mt-8">
+      <h2
+        id="projects"
+        className="text-3xl rounded font-bold inline border-b-4 border-purple-600 border-opacity-75 py-0.5"
+        style={{ fontFamily: "Epilogue" }}
+      >
         Projects
       </h2>
       <div className="flex flex-row flex-wrap justify-center">

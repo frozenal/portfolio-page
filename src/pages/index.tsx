@@ -4,6 +4,7 @@ import AboutSection from "../components/AboutSection/AboutSection"
 import HeroSection from "../components/HeroSection/HeroSection"
 import Navbar from "../components/Navbar/Navbar"
 import "../css/globals.css"
+import ContactSection from "../components/ContactSection/ContactSection"
 
 interface Props {}
 
@@ -16,6 +17,9 @@ const index = (props: Props) => {
         <AboutSection />
         <ProjectSection />
       </main>
+      <footer>
+        <ContactSection />
+      </footer>
     </div>
   )
 }

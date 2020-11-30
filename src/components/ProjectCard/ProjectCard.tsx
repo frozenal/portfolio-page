@@ -41,8 +41,8 @@ const ProjectCard = (props: Props) => {
   }
 
   return (
-    <div className="w-96 h-92 flex flex-col my-6 border border-black border-opacity-10 shadow-xl p-4 hover:shadow-2xl">
-      <Img fluid={fluid} className="my-2" />
+    <div className="w-96 h-92 flex flex-col my-6 border border-black border-opacity-10 shadow-xl p-4 hover:shadow-2xl ">
+      <Img fluid={fluid} className="my-2 z-0" />
       <div className="py-4 border-t-2 border-opacity-5">
         <h2 className="w-full text-left text-3xl font-semibold px-2">
           {props.projectName}

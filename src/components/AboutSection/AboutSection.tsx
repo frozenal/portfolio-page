@@ -5,10 +5,11 @@ interface Props {}
 
 const AboutSection = (props: Props) => {
   return (
-    <div id="aboutSection" className="flex flex-col items-center">
+    <div className="flex flex-col items-center">
       <h2
+        id="aboutSection"
         style={{ fontFamily: "Epilogue" }}
-        className="text-3xl text-center w-full font-bold"
+        className="text-3xl text-center rounded font-bold inline border-b-4 border-purple-600 border-opacity-75 py-0.5"
       >
         About Me
       </h2>
