@@ -40,13 +40,13 @@ const ProjectCard = (props: Props) => {
   }
 
   return (
-    <div className="w-96 h-92 flex flex-col my-6 border border-black border-opacity-10 shadow-xl p-4 hover:shadow-2xl ">
-      <Img fluid={fluid} className="my-2 z-0" />
+    <div className="md:w-96 sm:w-80 h-92 flex flex-col my-6 mx-4 border border-black border-opacity-10 shadow-xl p-4 hover:shadow-2xl ">
+      {props.imagePath && <Img fluid={fluid} className="my-2 z-0" />}
       <div className="py-4 border-t-2 border-opacity-5">
         <h2 className="w-full text-left text-3xl font-semibold px-2">
           {props.projectName}
         </h2>
-        <div className="flex flex-row">
+        <div className="flex flex-row flex-wrap">
           {props.projectSkills.map(skill => (
             <h3 className="pl-2 text-gray-400 text-xl font-normal">{skill}</h3>
           ))}

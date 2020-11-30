@@ -14,7 +14,7 @@ const AboutSection = (props: Props) => {
         About Me
       </h2>
       <div
-        className="pt-4 text-center md:w-5/12 sm:w-screen"
+        className="pt-4 text-center md:w-5/12 sm:w-7/12"
         style={{ fontFamily: "Epilogue" }}
       >
         I'm a high-school senior who loves to design and build applications for
@@ -29,13 +29,13 @@ const AboutSection = (props: Props) => {
         <div className="font-bold">
           Here are some technologies I am skilled with:
         </div>
-        <ul className="grid grid-cols-2 list-disc text-left w-7/12 mx-auto my-1">
+        <ul className="grid grid-cols-2 list-disc sm:text-center md:text-left md:w-7/12 sm:w-9/12 mx-auto my-1">
           <li>React</li>
-          <li>Javascript/Typescript/HTML/CSS</li>
+          <li>HTML/CSS</li>
+          <li>JavaScript</li>
           <li>Next.js</li>
           <li>Node.js</li>
-          <li>PostgreSQL</li>
-          <li>MongoDB</li>
+          <li>PostgreSQL & MongoDB</li>
           <li>Git & GitHub</li>
           <li>Python</li>
         </ul>
