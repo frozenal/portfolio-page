@@ -5,12 +5,15 @@ import HeroSection from "../components/HeroSection/HeroSection"
 import Navbar from "../components/Navbar/Navbar"
 import "../css/globals.css"
 import ContactSection from "../components/ContactSection/ContactSection"
+import { Helmet } from "react-helmet"
+import SEO from "../components/SEO/SEO"
 
 interface Props {}
 
 const index = (props: Props) => {
   return (
     <div>
+      <SEO />
       <Navbar />
       <main className="mt-14 flex flex-col w-screen">
         <HeroSection />
